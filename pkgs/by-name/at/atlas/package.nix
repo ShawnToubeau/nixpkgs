@@ -9,7 +9,7 @@
 
 buildGoModule rec {
   pname = "atlas";
-  version = "0.28.1";
+  version = "0.31.0";
 
   src = fetchFromGitHub {
     owner = "ariga";
@@ -51,7 +51,7 @@ buildGoModule rec {
     homepage = "https://atlasgo.io/";
     changelog = "https://github.com/ariga/atlas/releases/tag/v${version}";
     license = licenses.asl20;
-    maintainers = with maintainers; [ aaronjheng ];
+    maintainers = with maintainers; [ aaronjheng, ShawnToubeau ];
     mainProgram = "atlas";
   };
 }
